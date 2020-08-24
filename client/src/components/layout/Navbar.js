@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <nav className="navbar bg-dark">
             <h1>
-                <Link to="index.html"><i className="fa fa-code"></i> DevConnector</Link>
+                <Link to="/"><i className="fa fa-code"></i> OvioBlog</Link>
             </h1>
             <ul>
                 <li><Link to="!#">Developers</Link></li>
