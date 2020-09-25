@@ -3,15 +3,16 @@ const config = require('config');
 const db = config.get('mongoURI');
 
 const connectDB = async () => {
-    try{
+    try {
         await mongoose.connect(db, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-            useFindAndModify: false
+            useFindAndModify: false,
+            useCreateIndex: true
         });
 
         console.log('MongoDb Connected...');
-    } catch(err) {
+    } catch (err) {
         console.error(err.message);
         process.exit(1);
     }
