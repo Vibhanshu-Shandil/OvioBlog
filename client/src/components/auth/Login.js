@@ -15,14 +15,14 @@ const Login = ({ login, isAuthenticated }) => {
 
     const onChange = e => setFormData({ ...formData, [e.target.name]: e.target.value });
 
-    const onSubmit =  e => {
+    const onSubmit = e => {
         e.preventDefault();
         login(email, password);
     }
 
     if (isAuthenticated) {
         return <Redirect to="/dashboard" />;
-      }
+    }
 
     return (
         <Fragment>
@@ -48,7 +48,7 @@ const Login = ({ login, isAuthenticated }) => {
                 <input type="submit" className="btn btn-primary" value="Login" />
             </form>
             <p className="my-1">
-                Don't have an account? <Link to="/register">Log In</Link>
+                Don't have an account? <Link to="/register">Sign Up</Link>
             </p>
         </Fragment>
     )
