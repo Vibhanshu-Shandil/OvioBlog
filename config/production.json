@@ -1,0 +1,5 @@
+{
+	"mongoURI": "mongodb+srv://no_alias:no_alias8351@cluster0.tge7a.mongodb.net/OvioBlog?retryWrites=true&w=majority",
+	"githubToken": "54a9c6959c75f05df0d2c74067494b9a53d008ae",
+	"jwtSecret": "aFls165*m%U7y*LS8VCg"
+}
